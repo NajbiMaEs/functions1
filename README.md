@@ -54,37 +54,83 @@ def countCharacterType(str):
 # functions2
 ## Write a function to find the Max of three numbers.
 ### exc01.c
+```c
+```
 ### exc01.py
+```python
+```
 ## Write a function to sum all the numbers in a list.
 ### exc02.c
+```c
+```
 ### exc02.py
+```python
+```
 ## Write a function to multiply all the numbers in a list.
 ### exc03.c
+```c
+```
 ### exc03.py
+```python
+```
 ## Write a program to reverse a string.
 ### exc04.c
+```c
+```
 ### exc04.py
+```python
+```
 ## Write a function to calculate the factorial of a number (a non-negative integer). The function accepts the number as an argument.
 ### exc05.c
+```c
+```
 ### exc05.py
+```python
+```
 ## Write a function to check whether a number is in a given range.
 ### exc06.c
+```c
+```
 ### exc06.py
+```python
+```
 ## Write a function that accepts a string and calculate the number of upper case letters and lower case letters.
 ### exc07.c
+```c
+```
 ### exc07.py
 ## Write a function that takes a list and returns a new list with unique elements of the first list.
 ### exc08.c
+```c
+```
 ### exc08.py
+```python
+```
 ## Write a function that takes a number as a parameter and check the number is prime or not.
-### exc08.c
-### exc08.py
-## Write a program to print the even numbers from a given list.
 ### exc09.c
+```c
+```
 ### exc09.py
-## Write a function to check whether a number is perfect or not.
+```python
+```
+## Write a program to print the even numbers from a given list.
 ### exc10.c
+```c
+```
 ### exc10.py
-## Write a function that checks whether a passed string is palindrome or not.
+```python
+```
+## Write a function to check whether a number is perfect or not.
 ### exc11.c
+```c
+```
 ### exc11.py
+```python
+```
+## Write a function that checks whether a passed string is palindrome or not.
+### exc12.c
+```c
+```
+### exc12.py
+```python
+```
