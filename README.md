@@ -8,7 +8,7 @@ def rvrs(s):
     str = i + str
   return str
  ```
-#3 create a function that returns 0 if both have the same length and 1 if is different.
+## create a function that returns 0 if both have the same length and 1 if is different.
 ```python
 def num (l1, l2):
     if not l1 and not l2:
