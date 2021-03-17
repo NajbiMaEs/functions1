@@ -340,7 +340,44 @@ print(perfect_num(6))
 ## Write a function that checks whether a passed string is palindrome or not.
 ### exc12.c
 ```c
+int i;
+  int len=strlen(string);
+  for(i=len-1; i>=0; i--){
+    if(string[len-i-1]!=string[i]){
+      return 0;
+    }
+  }
+  return 1;
+}
+
+int function1(char string[MAX])
+{
+  int length1 = strlen()
+}
+
+int main(void) {
+  char mystring1[MAX] = "This is a string";
+  char mystring2[MAX] = "a string";
+  printf("the value for string 1 is %lu and len10 result is %d \n",strlen(mystring1),len10(mystring1));
+  printf("the value for string 2 is %lu and len10 result is %d \n",strlen(mystring2),len10(mystring2));
+
+  reverse_string(mystring1);
+  printf("the value of palindrome is %d\n",palindrome("01210"));
+
+  return 0;
+}
 ```
 ### exc12.py
 ```python
+def isPalindrome(string):
+	left_pos = 0
+	right_pos = len(string) - 1
+	
+	while right_pos >= left_pos:
+		if not string[left_pos] == string[right_pos]:
+			return False
+		left_pos += 1
+		right_pos -= 1
+	return True
+print(is Palindrome('aza')) 
 ```
