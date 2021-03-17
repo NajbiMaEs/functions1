@@ -55,30 +55,155 @@ def countCharacterType(str):
 ## Write a function to find the Max of three numbers.
 ### exc01.c
 ```c
+#include <stdio.h>
+#include <stdlib.h>
+biggestNumber(int,int,int);
+int main()
+{
+    int a,b,c;
+    printf("Enter three numbers");
+    scanf("%d%d%d",&a,&b,&c);
+
+ 
+int biggestNumber(int a,int b,int c){
+if(a>b)
+{
+    if(a>c)
+    return a;
+    else
+        return c;
+}
+else
+{
+    if(b>c)
+        return b;
+    else
+        return c;
+}
+}
 ```
 ### exc01.py
 ```python
+def max_of_two( a, b ):
+    if a > b:
+        return a
+        return b
+def max_of_three( a, b, c ):
+    return max_of_two( a, max_of_two( b, c ) )
+    
+print(max_of_three(1, 2, 3))
 ```
 ## Write a function to sum all the numbers in a list.
 ### exc02.c
 ```c
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int sum(int arr[], int n)
+{
+    int sum = 0; 
+ 
+   
+    for (int i = 0; i < n; i++)
+    sum += arr[i];
+ 
+    return sum;
+}
 ```
 ### exc02.py
 ```python
+def sum(numbers):
+    total = 0
+    for x in numbers:
+        total += x
+    return total
+print(sum((numbers)))
 ```
 ## Write a function to multiply all the numbers in a list.
 ### exc03.c
 ```c
+#include <stdio.h>
+
+int main()
+{
+    int i, num;
+    do
+    {
+        printf( "\n  Enter whole number: ", 163 );
+        scanf( "%d", &numero )
+
+        for ( i = 1 ; i <= 10 ; i++ )
+            printf( "\n   %d * %d = %d", i, num, i * num );
+    return 0;
+}
 ```
 ### exc03.py
 ```python
+def multiply(numbers):  
+    total = 1
+    for x in numbers:
+        total *= x  
+    return total  
+print(multiply((1, 2, 3, 4, 5, 6)))
 ```
 ## Write a program to reverse a string.
 ### exc04.c
 ```c
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+void inv (char cad[], int wide)
+{
+    int wide2=wide;
+    char inv[wide2];
+
+    for (int x=0, y=wide; x<wide && y>=0; x++, y--)
+    {
+        inv[x]=cadena[y];
+    }
+    cout<<"> "<<cadena<<endl;
+    cout<<endl<<"> "<<inv<<endl<<endl;
+    return;
+}
+
+int main ()
+{
+
+    char opcion;
+    string word;
+    int long, long2;
+
+    while (opcion!='n')
+    {
+        system ("cls");
+        cout<<"> Ejercicio"<<endl<<endl;
+        cout<<"> Ingrese palabra: ";
+        cin>>palabra;
+        longitud=palabra.length();
+
+        char cadena[palabra.size()+1];
+        strcpy(cadena, palabra.c_str());
+
+        longitud2=strlen(cadena);
+
+        invertidor (cadena,long2);
+
+    return 0;
+}
 ```
 ### exc04.py
 ```python
+def string_reverse(str1):
+
+    rstr1 = ''
+    index = len(str1)
+    while index > 0:
+        rstr1 += str1[ index - 1 ]
+        index = index - 1
+    return rstr1
+print(string_reverse('1234abcd'))
 ```
 ## Write a function to calculate the factorial of a number (a non-negative integer). The function accepts the number as an argument.
 ### exc05.c
