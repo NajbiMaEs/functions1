@@ -208,6 +208,22 @@ print(string_reverse('1234abcd'))
 ## Write a function to calculate the factorial of a number (a non-negative integer). The function accepts the number as an argument.
 ### exc05.c
 ```c
+#include <stdio.h> 
+ 
+long int factorial(int n);
+int main(void){
+ int n;
+ printf("Enter numb: ");
+ scanf("%d", &n);
+ printf("The factorial of %d = %ld", n,factorial(n));
+ return 0;
+}
+long int factorial(int n) {
+    if (n>=1)
+        return n * factorial(n-1);
+    else
+        return 1;
+}
 ```
 ### exc05.py
 ```python
@@ -222,6 +238,27 @@ print(factorial(n))
 ## Write a function to check whether a number is in a given range.
 ### exc06.c
 ```c
+#include <stdio.h>
+
+float range(float n1);
+float n;
+int main(void){
+  float n;
+  printf("Enter num: ");
+  scanf("%f", &n);
+  range(n);
+  return 0;
+}
+float range(float n){
+  if(n >=0 && n <= 20) 
+	{
+		printf("Range [0, 20]");
+  }
+	else{
+	printf("Outside the range\n");
+	}	
+	return 0;
+  }
 ```
 ### exc06.py
 ```python
@@ -271,21 +308,21 @@ print(unique_list([1,2,3,3,3,3,4,5]))
 #include<stdio.h>  
 int main(){    
 int n,i,m=0,flag=0;    
-printf("Enter a num to check prime:");    
-scanf("%d",&n);    
-m=n/2;    
-for(i=2;i<=m;i++)    
+	printf("Enter a num to check prime:");    
+	scanf("%d",&n);    
+	m=n/2;    
+		for(i=2;i<=m;i++)    
+	{    
+		if(n%i==0)    
 {    
-if(n%i==0)    
-{    
-printf("Num is not prime");    
-flag=1;    
-break;    
+	printf("Num is not prime");    
+	flag=1;    
+	break;    
+	}    
 }    
-}    
-if(flag==0)    
-printf("Num is prime");     
-return 0;  
+	if(flag==0)    
+	printf("Num is prime");     
+	return 0;  
  }    
 ```
 ### exc09.py
@@ -304,6 +341,40 @@ print(prime-test(3))
 ## Write a program to print the even numbers from a given list.
 ### exc10.c
 ```c
+#include <stdio.h>
+    void main()
+    {
+ 
+    int array[100], i, num;
+        printf("Enter size of array \n");
+ 
+        scanf("%d", &num);
+        printf("Enter elements of array \n");
+ 
+        for (i = 0; i < num; i++) 
+        {
+            scanf("%d", &array[i]);
+        }
+ 
+        printf("Even numb in array are - ");
+        for (i = 0; i < num; i++) 
+        {
+            if (array[i] % 2 == 0) 
+            {
+                printf("%d \t", array[i]);
+            }
+        }
+ 
+        printf("\n Odd nums in array are -");
+        for (i = 0; i < num; i++) 
+        {
+            if (array[i] % 2 != 0) 
+            {
+                printf("%d \t", array[i]);
+            }
+        }
+ 
+    }
 ```
 ### exc10.py
 ```python
