@@ -211,6 +211,13 @@ print(string_reverse('1234abcd'))
 ```
 ### exc05.py
 ```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+n=int(input("Input a number to compute the factiorial : "))
+print(factorial(n))
 ```
 ## Write a function to check whether a number is in a given range.
 ### exc06.c
@@ -218,12 +225,32 @@ print(string_reverse('1234abcd'))
 ```
 ### exc06.py
 ```python
+def test_range(n):
+    if n in range(1,11):
+        print( " %s is in the range"(n))
+    else :
+        print("The number is outside the range.")
+ return(0)
 ```
 ## Write a function that accepts a string and calculate the number of upper case letters and lower case letters.
 ### exc07.c
 ```c
 ```
 ### exc07.py
+```python
+def string_test(s):
+    d={"upper":0, "lower":0}
+    for l in s:
+        if l.isupper():
+           d["upper"]+=1
+        elif c.islower():
+           d["lower"]+=1
+        else:
+           pass
+    print ("Original String is  : ", s)
+    print ("No. of Upper characters : ", d["upper"])
+    print ("No. of Lower Characters : ", d["lower"])
+ ```
 ## Write a function that takes a list and returns a new list with unique elements of the first list.
 ### exc08.c
 ```c
@@ -237,6 +264,16 @@ print(string_reverse('1234abcd'))
 ```
 ### exc09.py
 ```python
+def prime-test(n):
+    if (n==1):
+        return False
+    elif (n==2):
+        return True;
+             for s in range(2,n):
+            if(n % s==0):
+                return False
+        return True            
+print(prime-test(3))
 ```
 ## Write a program to print the even numbers from a given list.
 ### exc10.c
