@@ -257,6 +257,13 @@ def string_test(s):
 ```
 ### exc08.py
 ```python
+def unique_list(l):
+  x = []
+  for a in l:
+    if a not in x:
+      x.append(a)
+  return x
+print(unique_list([1,2,3,3,3,3,4,5])) 
 ```
 ## Write a function that takes a number as a parameter and check the number is prime or not.
 ### exc09.c
@@ -300,6 +307,13 @@ print(prime-test(3))
 ```
 ### exc10.py
 ```python
+def is_even_num(l):
+    enum = []
+    for n in l:
+        if n % 2 == 0:
+            enum.append(n)
+    return enum
+print(is_even_num([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 ```
 ## Write a function to check whether a number is perfect or not.
 ### exc11.c
