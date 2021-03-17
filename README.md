@@ -1,6 +1,6 @@
 # functions1
 In a folder labeled as "functions1" inside github upload the next scripts (the scripts must run in repl.it )
-# create a function that receives a string and print the inverted string, remember that to print an element i you can use printf("%c",string[i]);
+## create a function that receives a string and print the inverted string, remember that to print an element i you can use printf("%c",string[i]);
 ```python
 def rvrs(s): 
   str = "" 
@@ -8,7 +8,7 @@ def rvrs(s):
     str = i + str
   return str
  ```
-# create a function that returns 0 if both have the same length and 1 if is different.
+#3 create a function that returns 0 if both have the same length and 1 if is different.
 ```python
 def num (l1, l2):
     if not l1 and not l2:
@@ -20,8 +20,8 @@ def num (l1, l2):
    
     return no(l1, l2)
  ```
-# create a function that returns 0 if both strings have the same elements, and when there's a different element. returns the first different char... an example: "var1X" and "var1Y", returns "X"
-# create a function where you insert a string and return 1 if is palindromic or not, it means that returns 1 if is palindrome ("ala"), return 0 if is not ("hello")
+## create a function that returns 0 if both strings have the same elements, and when there's a different element. returns the first different char... an example: "var1X" and "var1Y", returns "X"
+## create a function where you insert a string and return 1 if is palindromic or not, it means that returns 1 if is palindrome ("ala"), return 0 if is not ("hello")
 ```python 
 igual, aux = 0, 0
 text = input("Enter a word you want: ")
@@ -34,7 +34,7 @@ if len(text) == igual:
 else:
   print("hello")
  ```
-# create a function where you enter a string of 30 chars and print only the consonants
+## create a function where you enter a string of 30 chars and print only the consonants
 ```python
 def countCharacterType(str): 
     consonant =0
