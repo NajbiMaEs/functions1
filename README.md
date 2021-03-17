@@ -216,7 +216,7 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
-n=int(input("Input a number to compute the factiorial : "))
+n=int(input("Input a num to compute the factiorial : "))
 print(factorial(n))
 ```
 ## Write a function to check whether a number is in a given range.
@@ -261,6 +261,25 @@ def string_test(s):
 ## Write a function that takes a number as a parameter and check the number is prime or not.
 ### exc09.c
 ```c
+#include<stdio.h>  
+int main(){    
+int n,i,m=0,flag=0;    
+printf("Enter a num to check prime:");    
+scanf("%d",&n);    
+m=n/2;    
+for(i=2;i<=m;i++)    
+{    
+if(n%i==0)    
+{    
+printf("Num is not prime");    
+flag=1;    
+break;    
+}    
+}    
+if(flag==0)    
+printf("Num is prime");     
+return 0;  
+ }    
 ```
 ### exc09.py
 ```python
@@ -285,9 +304,38 @@ print(prime-test(3))
 ## Write a function to check whether a number is perfect or not.
 ### exc11.c
 ```c
+# include <stdio.h>   
+
+int main()   
+{   
+ int i, Num, Sum = 0 ;   
+  
+ printf("\n Enter any num \n") ;
+ scanf("%d", &Num) ;   
+ 
+ for(i = 1 ; i < Num ; i++)   
+  {   
+   if(Num % i = 0)   
+     Sum = Sum + i ;   
+  }    
+
+ if (Sum = Number)   
+    printf("\n %d is a Perfect Num", Num) ;   
+ else   
+    printf("\n%d is not the Perfect Num", Num) ;   
+
+return 0 ;   
+}
 ```
 ### exc11.py
 ```python
+def perfect_num(n):
+    sum = 0
+    for x in range(1, n):
+        if n % x == 0:
+            sum += x
+    return sum == n
+print(perfect_num(6))
 ```
 ## Write a function that checks whether a passed string is palindrome or not.
 ### exc12.c
